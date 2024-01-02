@@ -14,7 +14,7 @@ function App() {
     else{
       setIsSubmit(false);
     }
-    
+    setIsSubmit(false);
   }
 
   return (
@@ -30,9 +30,7 @@ function App() {
           <input type = "text" onChange = {(e) => setLastName(e.target.value)} required></input>
         </div>
         <button type = "submit" >Submit</button>
-        <div>
-          {isSubmit && <label>Full Name: {name} {lastName}</label>} 
-        </div>
+        {isSubmit && <label>Full Name: {name} {lastName}</label>} 
       </form>
     </div>
   );

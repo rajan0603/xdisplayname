@@ -22,11 +22,11 @@ function App() {
       <h1>Full Name Display</h1>
       <div>
         <label>First Name:</label>
-        <input onChange = {(e) => setName(e.target.value)} required></input>
+        <input type = "text" onChange = {(e) => setName(e.target.value)} required></input>
       </div>
       <div>
         <label>Last Name:</label>
-        <input onChange = {(e) => setLastName(e.target.value)} required></input>
+        <input type = "text" onChange = {(e) => setLastName(e.target.value)} required></input>
       </div>
       <button type = "submit" onClick = {buttonClick}>Submit</button>
       <div>

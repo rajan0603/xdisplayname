@@ -14,7 +14,6 @@ function App() {
     else{
       setIsSubmit(false);
     }
-    setIsSubmit(false);
   }
 
   return (
@@ -22,16 +21,16 @@ function App() {
       <h1>Full Name Display</h1>
       <form onSubmit = {buttonClick}>
         <div>
-          <label>First Name:</label>
+          <label className = "box">First Name:</label>
           <input type = "text" onChange = {(e) => setName(e.target.value)} required></input>
         </div>
         <div>
-          <label>Last Name:</label>
+          <label className='box'>Last Name:</label>
           <input type = "text" onChange = {(e) => setLastName(e.target.value)} required></input>
         </div>
         <button type = "submit" >Submit</button>
-        {isSubmit && <label>Full Name: {name} {lastName}</label>} 
       </form>
+      {isSubmit && <p>Full Name: {name} {lastName}</p>} 
     </div>
   );
 }
